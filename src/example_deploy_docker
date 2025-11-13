@@ -10,3 +10,6 @@ docker build -t cdhb7hgp7p5vscosureg.acurecr.io/chat-app:latest .
 docker push cdhb7hgp7p5vscosureg.acurecr.io/chat-app:latest
 
 
+--------
+az ad sp create-for-rbac --name "TechWorkshopL300AzureAI" --json-auth --role contributor --scopes /subscriptions/137ed52e-fc3c-4ea1-8902-6315f4c76067/resourceGroups/techworkshop-l300-ai-agents
+
