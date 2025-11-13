@@ -1,0 +1,12 @@
+# az login
+
+docker build -t chat-app .
+az acr login --name cdhb7hgp7p5vscosureg.azurecr.io
+docker tag chat-app cdhb7hgp7p5vscosureg.azurecr.io/chat-app:latest
+docker push cdhb7hgp7p5vscosureg.azurecr.io/chat-app:latest
+
+----------------
+docker build -t cdhb7hgp7p5vscosureg.acurecr.io/chat-app:latest .
+docker push cdhb7hgp7p5vscosureg.acurecr.io/chat-app:latest
+
+
